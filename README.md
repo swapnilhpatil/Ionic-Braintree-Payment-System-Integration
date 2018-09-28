@@ -16,10 +16,9 @@ Braintree Specific Plugin Commands
 Braintree
 =========================================
 1. sudo npm install --save braintree-web-drop-in
-
 //2. sudo ionic cordova plugin add cordova-plugin-braintree
-
 //3. sudo npm install --save @ionic-native/braintree
+
 ------------------------------------------------------------------------------
 
 KeyBoard
