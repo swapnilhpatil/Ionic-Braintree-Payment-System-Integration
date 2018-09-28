@@ -1,0 +1,67 @@
+<ion-header>
+	 <ion-toolbar style="padding: 0%;">
+		 <ion-buttons>
+		  <ion-row>
+			<ion-col col-2>
+			   <button ion-button clear (click)="navToHomePage()" class="mdButton buttonheaderios" style="background: #d82140" >
+			       <ion-icon name="ios-arrow-back"  style="font-size:20px"></ion-icon>
+			   </button>
+		    </ion-col>
+		    <ion-col col-10 class="headername">
+			  <span><b>Payment Confirmation</b> </span>
+		    </ion-col>
+		 </ion-row>
+		</ion-buttons>
+	 </ion-toolbar>
+</ion-header>
+
+<ion-content style="background:color:#fff" >
+    <div id="confirmmsg" style="background-color: #d1d8d5;">
+	   <ion-row col-12 > 
+		   <ion-col col-1>
+			 <ion-icon name="information-circle" style="font-size: 18px;color:#d5b114"></ion-icon>
+		  </ion-col>		
+		  <ion-col col-10   text-left>
+			 <b>Please confirm on below details</b>
+		  </ion-col>
+	  </ion-row>
+	</div>
+	<div  id="confirmdonation"  style="background-color: #d1d8d5; display:none;">
+		<ion-row col-12 > 
+		   <ion-col col-1>
+			  <ion-icon name="information-circle" style="font-size:18px;color:#d5b114"></ion-icon>
+		   </ion-col>		
+		   <ion-col col-10   text-left>
+			   <b> Please select appropriate payment details </b>
+		   </ion-col>
+	    </ion-row>
+    </div>
+	
+	<div *ngIf="paymentData == 'Pay'">
+
+		<div id="confirmData">
+		
+			  <ion-row col-12>
+				<ion-col col-5>
+					  <span>Amount</span>
+				  </ion-col>
+				 <ion-col col-7>
+					  <span>${{payAmount}}</span>
+				 </ion-col>
+			 </ion-row>
+			 
+		</div>
+		
+		<div id="successfulPay" class="success"></div>
+        <form id="payment-form" style="padding: 2%">
+             <div id="dropin-container"></div>
+			    <ion-row>
+                   <button (click)="paydata();" id="donate"  ion-button round outline type="submit" style="background-color: #d82140;color:#fff;width: 100%;margin-top:8%;margin-bottom: 11%;text-transform: uppercase;">Confirm</button>
+                </ion-row>
+		</form>
+
+        <form id="nonce-form">
+    	     <div id="dropin-container"></div>
+		</form>
+    </div>
+</ion-content>	

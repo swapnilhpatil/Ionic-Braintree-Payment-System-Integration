@@ -1,0 +1,7 @@
+{
+  "name": "Payment",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
