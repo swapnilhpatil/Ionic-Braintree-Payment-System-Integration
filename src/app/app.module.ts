@@ -12,7 +12,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 //import { Storage} from '@ionic/storage';
 //import { Http,Headers,RequestOptions } from '@angular/http';
-import * as dropin from 'braintree-web-drop-in';
 
 
 
